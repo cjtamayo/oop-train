@@ -12,7 +12,6 @@ class MaxSizeList(object):
             
     def get_list(self):
         return self.msl
-        
-        
+              
     def prinlim(self):
         print self.limit
