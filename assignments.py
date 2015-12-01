@@ -6,11 +6,10 @@ class MaxSizeList(object):
         self.msl = []
         
     def push(self, add):
-        if len(self.msl) <self.limit:
-            self.msl.append(add)
-        else:
+        if len(self.msl) >= self.limit:
             self.msl.pop(0)
-            self.msl.append(add)
+
+        self.msl.append(add)
             
     def get_list(self):
         return self.msl
